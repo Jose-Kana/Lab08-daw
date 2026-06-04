@@ -34,11 +34,11 @@ API REST para un sistema de e-commerce desarrollada con **Django REST Framework*
 
 ##  Características
 
-- ✅ **Serializadores** basados en `ModelSerializer` para cada modelo.
-- ✅ **CRUD completo** (GET, POST, PUT, PATCH, DELETE) vía `ModelViewSet`.
-- ✅ **JSON anidados** para consultas complejas (categorías con sus productos, pedidos con sus detalles).
-- ✅ **Enrutamiento automático** con `DefaultRouter`.
-- ✅ Acceso **anónimo** a todas las operaciones (sin JWT por ahora).
+-  **Serializadores** basados en `ModelSerializer` para cada modelo.
+- **CRUD completo** (GET, POST, PUT, PATCH, DELETE) vía `ModelViewSet`.
+- **JSON anidados** para consultas complejas (categorías con sus productos, pedidos con sus detalles).
+- **Enrutamiento automático** con `DefaultRouter`.
+- Acceso **anónimo** a todas las operaciones (sin JWT por ahora).
 
 ---
 
