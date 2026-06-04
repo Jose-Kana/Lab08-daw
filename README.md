@@ -1,4 +1,4 @@
-# 🛒 E-commerce API — Django REST Framework
+# E-commerce API — Django REST Framework
 
 API REST para un sistema de e-commerce desarrollada con **Django REST Framework** y **Supabase (PostgreSQL)**. Expone operaciones CRUD completas sobre productos, categorías, pedidos, detalles de pedido y direcciones, con soporte para respuestas JSON anidadas.
 
@@ -7,7 +7,7 @@ API REST para un sistema de e-commerce desarrollada con **Django REST Framework*
 
 ---
 
-## 📋 Tabla de contenidos
+##  Tabla de contenidos
 
 - [Stack tecnológico](#-stack-tecnológico)
 - [Características](#-características)
@@ -20,7 +20,7 @@ API REST para un sistema de e-commerce desarrollada con **Django REST Framework*
 
 ---
 
-## 🚀 Stack tecnológico
+##  Stack tecnológico
 
 | Tecnología | Uso |
 |---|---|
@@ -32,7 +32,7 @@ API REST para un sistema de e-commerce desarrollada con **Django REST Framework*
 
 ---
 
-## ✨ Características
+##  Características
 
 - ✅ **Serializadores** basados en `ModelSerializer` para cada modelo.
 - ✅ **CRUD completo** (GET, POST, PUT, PATCH, DELETE) vía `ModelViewSet`.
@@ -74,7 +74,7 @@ LAB08-DAW
 
 ---
 
-## 🔧 Instalación
+##  Instalación
 
 **1. Clona el repositorio**
 
@@ -124,7 +124,7 @@ La API queda disponible en `http://127.0.0.1:8000/api/`
 
 ---
 
-## 🔌 Endpoints de la API
+## 🔌Endpoints de la API
 
 Base URL: `http://127.0.0.1:8000/api/`
 
@@ -148,7 +148,7 @@ Base URL: `http://127.0.0.1:8000/api/`
 
 ---
 
-## 📦 Ejemplos de uso
+## Ejemplos de uso
 
 ### Crear un producto (POST)
 
@@ -206,11 +206,11 @@ Content-Type: application/json
 
 ---
 
-## 🎥 Video demostrativo
+##  Video demostrativo
 
-<!-- Pega aquí el link de tu video demostrativo -->
+[https://youtu.be/JrpOj8n4zG8?feature=shared]
 
-📺 **[Ver demostración](PEGA_AQUÍ_EL_LINK_DEL_VIDEO)**
+📺 **[Ver demostración](https://youtu.be/JrpOj8n4zG8?feature=shared)**
 
 ---
 
