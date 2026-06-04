@@ -30,7 +30,6 @@ from ecomerce.views import (
     DireccionViewSet
 )
 
-# El router registra automáticamente las rutas para todas las operaciones CRUD
 router = DefaultRouter()
 router.register(r'categorias', CategoriaViewSet)
 router.register(r'productos', ProductoViewSet)
@@ -39,6 +38,5 @@ router.register(r'detalles-pedido', DetallePedidoViewSet)
 router.register(r'direcciones', DireccionViewSet)
 
 urlpatterns = [
-    # Todos tus endpoints estarán disponibles bajo la ruta /api/
     path('api/', include(router.urls)),
 ]

@@ -16,10 +16,8 @@ class DireccionSerializer(serializers.ModelSerializer):
         model = Direccion
         fields = '__all__'
 
-# --- SERIALIZADORES CON JSON ANIDADOS (Requisito de la práctica) ---
 
 class CategoriaSerializer(serializers.ModelSerializer):
-    # Anidamos los productos. 'producto_set' busca todos los productos de esta categoría.
     productos = ProductoSerializer(many=True, read_only=True, source='producto_set')
 
     class Meta:
@@ -27,7 +25,6 @@ class CategoriaSerializer(serializers.ModelSerializer):
         fields = ['id', 'nombre', 'descripcion', 'productos']
 
 class PedidoSerializer(serializers.ModelSerializer):
-    # Anidamos los detalles del pedido para que la consulta sea compleja y completa.
     detalles = DetallePedidoSerializer(many=True, read_only=True, source='detallepedido_set')
 
     class Meta:
