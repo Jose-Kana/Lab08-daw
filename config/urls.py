@@ -20,3 +20,25 @@ from django.urls import path
 urlpatterns = [
     path('admin/', admin.site.urls),
 ]
+from django.urls import path, include
+from rest_framework.routers import DefaultRouter
+from ecomerce.views import (
+    CategoriaViewSet, 
+    ProductoViewSet, 
+    PedidoViewSet, 
+    DetallePedidoViewSet, 
+    DireccionViewSet
+)
+
+# El router registra automáticamente las rutas para todas las operaciones CRUD
+router = DefaultRouter()
+router.register(r'categorias', CategoriaViewSet)
+router.register(r'productos', ProductoViewSet)
+router.register(r'pedidos', PedidoViewSet)
+router.register(r'detalles-pedido', DetallePedidoViewSet)
+router.register(r'direcciones', DireccionViewSet)
+
+urlpatterns = [
+    # Todos tus endpoints estarán disponibles bajo la ruta /api/
+    path('api/', include(router.urls)),
+]
